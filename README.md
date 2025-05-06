@@ -22,3 +22,4 @@ A minimalist browser extension that adds a custom **speed slider** to YouTube, a
 
 5. Visit any YouTube video and enjoy precise speed control!
 
+![YouTube Speed Slider](stuff.png)
