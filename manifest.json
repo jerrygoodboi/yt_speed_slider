@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Speed Slider",
+  "version": "1.0",
+  "description": "Change playback speed of YouTube videos easily.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
