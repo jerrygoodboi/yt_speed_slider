@@ -23,8 +23,28 @@ slider.addEventListener("input", () => {
   valueDisplay.textContent = slider.value;
   setSpeed(parseFloat(slider.value));
   });
-document.getElementById("rst").addEventListener("click", () => {
-  valueDisplay.textContent = "1";
+document.getElementById("1").addEventListener("click", () => {
+  slider.value = "1";
+  valueDisplay.textContent = slider.value;
   setSpeed(1);
 });
-
+document.getElementById("2").addEventListener("click", () => {
+  slider.value = "2";
+  valueDisplay.textContent = slider.value;
+  setSpeed(2);
+});
+document.getElementById("2_5").addEventListener("click", () => {
+  slider.value = "2.5";
+  valueDisplay.textContent = slider.value;
+  setSpeed(2.5);
+});
+document.getElementById("3").addEventListener("click", () => {
+  slider.value = "3";
+  valueDisplay.textContent = slider.value;
+  setSpeed(3);
+});
+document.getElementById("3_5").addEventListener("click", () => {
+  slider.value = "3.5";
+  valueDisplay.textContent = slider.value;
+  setSpeed(3.5);
+});
