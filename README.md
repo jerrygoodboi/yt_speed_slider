@@ -5,7 +5,7 @@ A minimalist browser extension that adds a custom **speed slider** to YouTube, a
 ## 🎯 Features
 
 - 📈 Adjustable speed from `0.1x` to `16x`  
-- 🧭 Slider UI embedded into the YouTube player controls  
+- 🧭 Slider UI 
 - 🔄 Real-time speed update — no reload required  
 - 🧩 Lightweight and works seamlessly in the background  
 
