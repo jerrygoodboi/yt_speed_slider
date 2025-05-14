@@ -15,10 +15,18 @@ function setSpeed(speed) {
     });
   });
 }
+chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+  chrome.scripting.executeScript({
+    target: { tabId: tabs[0].id },
+    func: () => document.querySelector("video").playbackRate
+  }, (results) => {
+    document.getElementById("speedSlider").value = results[0].result;
+    document.getElementById("speedValue").textContent = results[0].result.toFixed(2);
+  });
+});
 
 const slider = document.getElementById("speedSlider");
 const valueDisplay = document.getElementById("speedValue");
-
 slider.addEventListener("input", () => {
   valueDisplay.textContent = slider.value;
   setSpeed(parseFloat(slider.value));
